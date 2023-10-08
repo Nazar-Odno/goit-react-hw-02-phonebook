@@ -15,6 +15,11 @@ function Contact({ id, name, number, onDeleteContact }) {
     );
 }
 
-
+Contact.propTypes = {
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    number: PropTypes.string.isRequired,
+    onDeleteContact: PropTypes.func.isRequired,
+};
 
 export default Contact;
